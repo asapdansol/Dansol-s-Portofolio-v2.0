@@ -3,287 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---=====Font awesome======-->
-    <link><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!---STYLES-->
-    <link><link rel="stylesheet" href="styles.css">
-    <title>Portfolio 2.0 Dansol</title>
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Dansol</title>
 </head>
 <body>
-    <!--Style switcher-->
-
-    <!--header-->
-    <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="nav__logo">DanSol</a>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">Home</a>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Dansol</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
                 </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">About me</a>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About me</a>
+                    <div class="circle"></div>
                 </li>
-                <li class="nav__item">
-                    <a href="#qualification" class="nav__link">Experience</a>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
                 </li>
-                <li class="nav__item">
-                    <a href="#works" class="nav__link">Portfolio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contact me</a>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
                 </li>
             </ul>
-        </nav>
+        </div>
+        <div class="nav-button">
+            <button class="btn">My CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
 
-    </header>
-    <!--main-->
-    <main class="main">
-        <!--home-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="home__content">
-                    <span class="home__small">Hello</span>
-                    <h1 class="home__tittle"><span>I'm</span> Daniel Solis <br />a <span>Full-Stack Developer</span></h1>
 
-                    <p class="home__description">Welcome to my portfolio, this is the v2.0 of my website to show my knowledge and make sure you enjoy a great suitable, responsive and kind chill website. You will be able to check my projects, a lot of information about me.
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Daniel Solis</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Junior Full-Stack developer with a pasion about Design, Music and Life.<br>
+                    (Currently learning)
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">My CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.instagram.com/dansol._/" target="_blank"><i class="uil uil-instagram"></a></i></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/jos%C3%A9-daniel-solis-centeno-5a87a3144/" target="_blank"><i class="uil uil-linkedin-alt"></a></i></div>
+                <div class="icon"><a href="https://github.com/asapdansol" target="_blank"><i class="uil uil-github-alt"></a></i></div>
+                <div class="icon"><a href="https://www.youtube.com/@Dansol04/videos" target="_blank"><i class="uil-youtube"></a></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="img/Mainavatar.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>More Info please!</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I'm Daniel Solis, a current Full-Stack Developer student and Web Designer who aims to involve, innovate and inspire through tech. Self-Learning all the time and a curious person that works for his family and knowledge, I'm actively seeking opportunities in my desired role as a Software Developer. Active learning CYBERSECURITY.
                     </p>
-
-                    <div class="home__btns"></div>
-                    <a href="#contact" class="btn">Hire me</a>
-                    <a href="#works" class="btn btn__transparent">My work</a>
-                </div>
-                <div class="home__img-wrapper">
-                    <img src="img/64502250239.png" alt="" class="home__img">
-                </div>
-
-            </div> 
-        </section>
-        <!--about-->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__img-wrapper">
-                    <img src="img/304876629_1406991099781935_8580165493997696820_n.jpg" class="about__img">
-                    <img src="img/304876629_1406991099781935_8580165493997696820_n.jpg" class="about__img">
-                    <img src="img/304876629_1406991099781935_8580165493997696820_n.jpg" class="about__img">
-                    <img src="img/304876629_1406991099781935_8580165493997696820_n.jpg" class="about__img">
-                </div>
-                <div class="about__content">
-                    <h2 class="section_title" data-title="Who am I?">I'm Daniel Solis, a current  Full-Stack Developer student and Web Designer</h2>
-                    
-                    <p class="about__description">A Full-Stack Developer who aims to involve, innovate and inspire through tech. Self-Learning all the time and a curious person that works for his family and knowledge, I'm actively seeking opportunities in my desired role as a Software Developer. Active learning CYBERSECURITY.</p>
-                    
-                    <ul class="about__data grid">
-                        <li class="data__item">
-                            <h3 class="data__tittle">Name:</h3>
-                            <span class="data_description">Daniel Solis</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__tittle">Age:</h3>
-                            <span class="data_description">25</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__tittle">From:</h3>
-                            <span class="data_description">Tumaco, Co</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__tittle">Email:</h3>
-                            <span class="data_description about__link">danikosolis@gmail.com</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="about_bottom">
-                        <a href="https://drive.google.com/file/d/1kLn_Hzs82_Msh1pqj5qd6h6oBBIese0c/view" target="_blank" class="btn">Download CV</a>
-                        <div class="about__social-links">
-                            <a class="about__social-link" href="https://www.linkedin.com/in/jos%C3%A9-daniel-solis-centeno-5a87a3144/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                           
-                            <a class="about__social-link" href="https://www.instagram.com/dansol._/" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                           
-                            <a class="about__social-link" href="https://github.com/asapdansol" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+                    <div class="about-btn">
+                        <button class="btn">Download CV<i class="uil uil-import"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--qualification-->
-        <section class="qualification section" id="qualification">
-            <h2 class="section_title title-center" data-title="My Journey">Experience</h2>
-            <div class="resume__container container grid">
-                <div class="resmue__group">
-                    <h3 class="resume__heading">Education</h3>
-                    <div class="resume__items">
-                        <div class="resume__item">
-                            <div class="resume__header">
-                                <h3 class="resume_subtitle">U. Distrital - Todos a la "U"</h3>
-                                
-                            </div>
-                            <div class="resume__content">
-                                <div class="resume__date-title">
-                                    <h3 class="resume__tittle">Full-Stack Development</h3>
-                                    <span class="resume__date">2023-2023</span>
-                                </div>
-                                <p class="resume__description">Full Stack Developer's Certificate, Computer programming, specific applicationsFull Stack Developer's Certificate, Computer programming, specific applications.
-                                Certificate in Full Stack web development thanks to the Todos a la U scholarship</p>
-                            </div>
-                        </div>
-                        <div class="resume__item">
-                            <div class="resume__header">
-                                <h3 class="resume_subtitle">Coursera - Google Careers</h3>
-                                
-                            </div>
-                            <div class="resume__content">
-                                <div class="resume__date-title">
-                                    <h3 class="resume__tittle">Cybersecurity</h3>
-                                    <span class="resume__date">2023-2024</span>
-                                </div>
-                                <p class="resume__description">Dive into the dynamic and critical field of cybersecurity with my current study, a comprehensive exploration of the principles and practices safeguarding digital systems. Delving deep into the realms of threat detection, vulnerability assessment, and risk management, this program equips me with the skills necessary to navigate the intricate landscape of cyber threats. Using Python for automatic Tasks</p>
-                            </div>
-                        </div>
-
-                        
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>Angular</span>
                     </div>
                 </div>
-                <div class="resmue__group">
-                    <h3 class="resume__heading">Work Experience</h3>
-                    <div class="resume__items">
-                        <div class="resume__item">
-                            <div class="resume__header">
-                                <h3 class="resume_subtitle">Foundever</h3>
-                               
-                            </div>
-                            <div class="resume__content">
-                                <div class="resume__date-title">
-                                    <h3 class="resume__tittle">Chat Support Specialist</h3>
-                                    <span class="resume__date">2021-Current</span>
-                                </div>
-                                <p class="resume__description">My goal is to create a positive customer experience by delivering prompt and personalized assistance. Whether it's resolving issues, answering queries, or providing guidance, I am dedicated to ensuring that our customers feel supported and valued. </p>
-                            </div>
-                        </div>
-                        <div class="resume__item">
-                            <div class="resume__header">
-                                <h3 class="resume_subtitle">Teleperformance</h3>
-                               
-                            </div>
-                            <div class="resume__content">
-                                <div class="resume__date-title">
-                                    <h3 class="resume__tittle">Fraud Detector Agent</h3>
-                                    <span class="resume__date">2019-2021</span>
-                                </div>
-                                <p class="resume__description">I was at the forefront of safeguarding our business against potential risks and fraudulent activities. Analyzing transactions and user behavior, I utilize advanced tools and methodologies to identify and mitigate potential threats. My role involves staying informed about the latest fraud trends, constantly adapting strategies to stay one step ahead of malicious actors.</p>
-                            </div>
-                        </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>Python</span>
 
-                        
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
                     </div>
                 </div>
             </div>
+          </div>
+       </section>
 
-        </section>
-        <!--Portofolio-->
-        <section class="works section" id="works">
-            <h2 class="section_title title-center" data-title="My Portfolio">Works</h2>
-            <div class="work__container container grid">
-                <div class="work__card">
-                    <a href="https://sickobog.com/" target="_blank"><img src="img/sickobog.png" alt="" class="work__img" href="https://sickobog.com/">
-                    <div class="work__details">
-                        <h3 class="work__title">Sickobog</h3><br>
-                        <span class="work__description">Currently the Web Designer and Developer</span>
-                    </div></a>
-                </div>
-                <div class="work__card">
-                    <a href="https://dansol.netlify.app/home" target="_blank"><img src="img/portofolio 1.0.png" alt="" class="work__img" href="https://dansol.netlify.app/home">
-                    <div class="work__details">
-                        <h3 class="work__title">Portofolio v1.0</h3><br>
-                        <span class="work__description">The first version of this portfolio</span>
-                    </div></a>
-                </div>
-            </div>
-        </section>
-        <!--Contact-->
-        <section class="contact section" id="contact">
-            <h2 class="section_title title-center" data-title="Get in touch">Contact me</h2>
-            <div class="contact__container container grid">
-                <div class="contact__details">
-                    <div class="contact__item">
-                        <i class="fa-solid fa-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__data">+57-3142140384</span>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <i class="fa-solid fa-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email Me</h3>
-                            <span class="contact__data">danikosolis@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <i class="fa-solid fa-location-dot contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__data">Currently at Bogota (Working remotely anywhere) </span>
-                        </div>
-                    </div>
-                </div>
-                <form action="" class="contact__form">
-                    <div class="form__group">
-                        <div class="form__input">
-                            <input type="text" placeholder="Name" class="input__control">
-                        </div> 
-                        
-                        <div class="form__input">
-                            <input type="email" placeholder="Email" class="input__control">
-                        </div>
-                    
-    
-                    
-                        <div class="form__input">
-                            <input type="text" placeholder="Subject" class="input__control">
-                        </div>
-                    
-                    
-                    
-                        <div class="form__input">
-                            <textarea name="" id="" placeholder="Message" cols="30" rows="10" class="input__control textarea"></textarea>
-                        </div>
-    
-                        <button class="btn contact__btn">Send Message</button>
-                    </div>
-                </form>
-            </div>
-            
-        </section>
-         <!--Footer-->
-         <footer class="footer">
-            <div class="footer__container container">
-                <p class="footer__copyright">&copy; 2024 Daniel Solis. All rights Reserved</p>
-                <div class="footer__social-links">
-                    <a class="footer__social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                   
-                    <a class="footer__social-link">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                   
-                    <a class="footer__social-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
-         </footer>
+       <!-- -------------- PROJECT BOX ---------------- -->
 
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <h3>SICKOBOG</h3>
+                <label>Sneakers Shop</label>
+                <img src="img/sickobog.png"></a>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Portfolio try 1.0v</h3>
+                <label>The 2nd version of this Portfolio</label>
+                <img src="img/portofolio 1.0.png">
+                
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>1+ year in the field</label></a>
+            </div>
+          </div>
+       </section>
 
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: danikosolis@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +57 314 214 0384</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
 
     </main>
-   
 
-   
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Daniel Solis</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Daniel Solis</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
 </body>
 </html>
