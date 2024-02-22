@@ -187,18 +187,13 @@
                 </div>
              </div>
              <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
+               <form action="https://api.web3forms.com/submit" method="POST" class="form-control">
+                    <input type="hidden" name="access_key" value="62889935-f0e9-4c2e-828c-7706e13c0002">
+                    <input type="text" class="input-field" placeholder="Name" name="name" required>
+                    <input type="text" class="input-field" placeholder="Email" name="email" required>
+                    <textarea class="text-area" placeholder="Message" name="message" required></textarea>
+                    <button class="btn">Send <i class="uil uil-message"></i></button>
+                </form>
              </div>
           </div>
        </section>
@@ -251,5 +246,7 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="script.js"></script>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
